@@ -17,11 +17,21 @@ No dependencies to install — the standard library is all you need:
 ```bash
 python3 run.py samples/brands.txt
 python3 run.py samples/brands.txt --min-score 80
+python3 run.py samples/brands.txt --registered samples/registered.txt
 ```
 
-Exit codes: `2` = usage error or unreadable brands file, `0` = variants
-generated (no findings model on day 1 — see day 2 for registered
-variant alerts).
+Exit codes: `2` = usage error or unreadable brands file, `1` = at
+least one HIGH registered lookalike (with `--registered`), `0` =
+no HIGH findings.
+
+## Day-2 scope
+
+- Registered-variant alerts (`--registered`): variants that appear
+  in a registered-domains list are reported as findings — HIGH at
+  score 85+, MEDIUM below — with exit code `1` when any HIGH
+  lookalike is registered.
+
+## Day-1 scope
 
 ## Day-1 scope
 

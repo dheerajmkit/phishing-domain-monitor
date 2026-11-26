@@ -1,0 +1,6 @@
+acme.co
+acmme.com
+login-acme.com
+globexbank.net
+unrelated-example.org
+initech.app
