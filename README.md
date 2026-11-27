@@ -24,6 +24,13 @@ Exit codes: `2` = usage error or unreadable brands file, `1` = at
 least one HIGH registered lookalike (with `--registered`), `0` =
 no HIGH findings.
 
+## Day-3 scope
+
+- Unit tests (`tests/test_checks.py`): run with
+  `python3 -m unittest discover -s tests -v`.
+- Full usage guide (`docs/USAGE.md`) and a demo script
+  (`examples/run-all.sh`).
+
 ## Day-2 scope
 
 - Registered-variant alerts (`--registered`): variants that appear
